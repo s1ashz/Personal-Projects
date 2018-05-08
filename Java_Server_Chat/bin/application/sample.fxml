@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <TextArea fx:id="messagesArea" editable="false" layoutX="14.0" layoutY="86.0" prefHeight="300.0" prefWidth="376.0" />
+      <Button fx:id="startServerBtn" layoutX="14.0" layoutY="14.0" minWidth="78.0" mnemonicParsing="false" onAction="#startServerClick" text="Start Server" />
+      <Button fx:id="stopServerBtn" disable="true" layoutX="14.0" layoutY="50.0" minWidth="78.0" mnemonicParsing="false" onAction="#stopServerClick" text="Stop Server" />
+      <Button fx:id="clearBtn" layoutX="308.0" layoutY="50.0" minWidth="78.0" mnemonicParsing="false" onAction="#clearClick" text="Clear" />
+      <Button fx:id="usersBtn" layoutX="308.0" layoutY="14.0" minWidth="78.0" mnemonicParsing="false" onAction="#usersClick" text="Users" />
+      <Label layoutX="113.0" layoutY="18.0" text="Port:" />
+      <TextField fx:id="portInput" layoutX="145.0" layoutY="14.0" prefWidth="60.0" promptText="Port" text="55555" />
+   </children>
+</Pane>
