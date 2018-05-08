@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anthares.AnaAntunes.controller.Controller">
+  <tabs>
+    <Tab text="Lift Plan">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutX="59.0" layoutY="79.0" prefHeight="52.0" prefWidth="168.0" spacing="25.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="218.0" text="Lift Plan Current Number:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="227.0" layoutY="79.0" prefHeight="53.0" prefWidth="374.0" spacing="25.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Label fx:id="liftPlanLabel" prefHeight="20.0" prefWidth="382.0" text="ANT-LP-18-001">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="59.0" layoutY="90.0" prefHeight="213.0" prefWidth="468.0" spacing="25.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#generateNewLiftPlanNumber" prefHeight="47.0" prefWidth="182.0" text="Generate new Number" textAlignment="CENTER">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                        <VBox fx:id="newGeneratedNumberLPVBoxLayout" prefHeight="200.0" prefWidth="100.0" spacing="30.0" visible="false">
+                           <children>
+                              <Label fx:id="generatedLiftPlanLabel" prefHeight="32.0" prefWidth="504.0" text="ANT-LP-18-002">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="TOP_CENTER" prefHeight="54.0" prefWidth="468.0" spacing="50.0">
+                                 <children>
+                                    <Button fx:id="acceptLPButton" mnemonicParsing="false" onAction="#acceptLPButtonClick" prefHeight="44.0" prefWidth="108.0" text="Accept" />
+                                    <Button fx:id="deleteLPButton" mnemonicParsing="false" onAction="#deleteLPButtonClick" prefHeight="44.0" prefWidth="108.0" text="Delete" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Task Plan">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutX="59.0" layoutY="79.0" prefHeight="52.0" prefWidth="168.0" spacing="25.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="218.0" text="Lift Plan Current Number:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="227.0" layoutY="79.0" prefHeight="53.0" prefWidth="374.0" spacing="25.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Label fx:id="taskPlanLabel" prefHeight="20.0" prefWidth="476.0" text="ANT-LP-18-001">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="59.0" layoutY="90.0" prefHeight="213.0" prefWidth="468.0" spacing="25.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#generateNewTaskPlanNumber" prefHeight="47.0" prefWidth="182.0" text="Generate new Number" textAlignment="CENTER">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                        <VBox fx:id="newGeneratedNumberTPVBoxLayout" prefHeight="200.0" prefWidth="100.0" spacing="30.0" visible="false">
+                           <children>
+                              <Label fx:id="generatedTaskPlanLabel" prefHeight="32.0" prefWidth="504.0" text="ANT-LP-18-002">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="TOP_CENTER" prefHeight="54.0" prefWidth="468.0" spacing="50.0">
+                                 <children>
+                                    <Button fx:id="acceptTPButton" mnemonicParsing="false" onAction="#acceptTPButtonClick" prefHeight="44.0" prefWidth="108.0" text="Accept" />
+                                    <Button fx:id="deleteTPButton" mnemonicParsing="false" onAction="#deleteTPButtonClick" prefHeight="44.0" prefWidth="108.0" text="Delete" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Settings">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutX="52.0" layoutY="21.0" prefHeight="280.0" prefWidth="119.0" spacing="30.0" AnchorPane.topAnchor="21.0">
+                     <children>
+                        <Label text="Boat:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Year:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Lift Plan Label:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Lift Plan Number:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Task Plan Label:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Task Plan Number:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="183.0" layoutY="14.0" prefHeight="265.0" prefWidth="160.0" spacing="26.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <TextField fx:id="settingsBoatLabel" onKeyPressed="#setUpdateBtnVisible" promptText="boat" />
+                        <TextField fx:id="settingsYearLabel" onKeyPressed="#setUpdateBtnVisible" promptText="year" />
+                        <TextField fx:id="settingsLPLabel" onKeyPressed="#setUpdateBtnVisible" promptText="LP" />
+                        <TextField fx:id="settingsLPNumberLabel" onKeyPressed="#setUpdateBtnVisible" promptText="001" />
+                        <TextField fx:id="settingsTPLabel" onKeyPressed="#setUpdateBtnVisible" promptText="TP" />
+                        <TextField fx:id="settingsTPNumberLabel" onKeyPressed="#setUpdateBtnVisible" promptText="001" />
+                     </children>
+                  </VBox>
+                  <Button fx:id="updateSettingsBtn" layoutX="183.0" layoutY="309.0" mnemonicParsing="false" onAction="#updateSettingsClick" prefHeight="27.0" prefWidth="160.0" text="Update Settings">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
