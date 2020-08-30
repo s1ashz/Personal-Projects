@@ -12,7 +12,6 @@ class ClearCanvasCommand extends AbstractCommand {
 
     @Override
     public void execute() throws ShapeDrawerException {
-        System.out.println(">ClearCanvasCommand");
         getCanvasService().clearCanvas();
     }
 

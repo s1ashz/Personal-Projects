@@ -14,7 +14,6 @@ class CreateCanvasCommand extends AbstractCommand {
 
     @Override
     public void execute() throws ShapeDrawerException {
-        System.out.println(">CreateCanvasCommand");
         CreateCanvasValidator createCanvasValidator = new CreateCanvasValidator(getCommandArguments());
         CommandNumbers commandNumbers = createCanvasValidator.getValidatedCommandNumbers();
 
